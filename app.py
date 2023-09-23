@@ -106,14 +106,14 @@ def main():
     #flag=1
     qvals = {"Select an Option": 0, "Strongly Agree": 5, "Agree": 4, "Neutral": 3, "Disagree": 2,
              "Strongly Disagree": 1}
-    st.title("CounselBot")
+    st.title("Vidya Bot")
     banner=Image.open("img/21.png")
     st.image(banner, use_column_width=True)
-    st.write("Hi! I'm CounselBot, your personal career counseling bot. Ask your queries in the text box below and hit enter. If and when you are ready to take our personality test, type \"start my test\" and you're good to go!")
+    st.write("Hi! I'm VidyaBot, your personal career counseling bot. Ask your queries in the text box below and hit enter. If and when you are ready to take our personality test, type \"start my test\" and you're good to go!")
 
     df3 = get_text()
     if (df3.loc[0, 'user']==""):
-        ans = "Hi, I'm CounselBot. \nHow can I help you?"
+        ans = "Hi, I'm VidyaBot. \nHow can I help you?"
 
     elif(flag==0):
         #st.write(flag)
@@ -138,6 +138,13 @@ def main():
             if(kr1=="Grade 10"):
                 lis = []
                 if (kr == "Yes"):
+                    st.write("VidyaBot: Now, please enter your aptitude marks.")
+                    aptitude_marks = st.number_input("Aptitude Marks", min_value=0)
+                
+                    # Include an aptitude question
+                    st.header("Aptitude Question")
+                    st.write("Rate your aptitude for problem-solving on a scale of 1 to 10, where 1 is low and 10 is high")
+                    aptitude_question = st.slider("Aptitude for Problem-Solving", min_value=1, max_value=10, step=1)
                     st.header("Question 1")
                     st.write("I find writing programs for computer applications interesting")
                     n = imagify.imageify(n)
@@ -156,14 +163,14 @@ def main():
                         if (inp2 != "Select an Option"):
                             lis.append(qvals[inp2])
                             st.header("Question 3")
-                            st.write("Learning about the existence of individual chemical components is interesting")
+                            st.write("Learning about chemical compounds is interesting")
                             n = imagify.imageify(n)
                             inp3 = st.selectbox("", ["Select an Option", "Strongly Agree", "Agree", "Neutral", "Disagree",
                                                      "Strongly Disagree"], key='3')
                             if (inp3 != "Select an Option"):
                                 lis.append(qvals[inp3])
                                 st.header("Question 4")
-                                st.write("The way plants and animals thrive gets me curious")
+                                st.write("The way plants and animals is interesting")
                                 n = imagify.imageify(n)
                                 inp4 = st.selectbox("",
                                                     ["Select an Option", "Strongly Agree", "Agree", "Neutral", "Disagree",
@@ -171,7 +178,7 @@ def main():
                                 if (inp4 != "Select an Option"):
                                     lis.append(qvals[inp4])
                                     st.header("Question 5")
-                                    st.write("Studying about the way fundamental constituents of the universe interact with each other is fascinating")
+                                    st.write("I find physical science interesting")
                                     n = imagify.imageify(n)
                                     inp5 = st.selectbox("",
                                                         ["Select an Option", "Strongly Agree", "Agree", "Neutral",
@@ -181,7 +188,7 @@ def main():
                                         lis.append(qvals[inp5])
                                         st.header("Question 6")
                                         st.write(
-                                            "Accounting and business management is my cup of tea")
+                                            "Do you love the way how business works")
                                         n = imagify.imageify(n)
                                         inp6 = st.selectbox("",
                                                             ["Select an Option", "Strongly Agree", "Agree", "Neutral",
@@ -201,7 +208,7 @@ def main():
                                                 lis.append(qvals[inp7])
                                                 st.header("Question 8")
                                                 st.write(
-                                                    "I find the need to be aware of stories from the past.")
+                                                    "I find the need to be aware of history.")
                                                 n = imagify.imageify(n)
                                                 inp8 = st.selectbox("",
                                                                     ["Select an Option", "Strongly Agree", "Agree",
@@ -232,6 +239,9 @@ def main():
                                                                               "Strongly Disagree"], key='10')
                                                         if (inp10 != "Select an Option"):
                                                             lis.append(qvals[inp10])
+                                                           
+                                                         
+                                                            
                                                             st.success("Test Completed")
                                                             #st.write(lis)
                                                             st.title("RESULTS:")
