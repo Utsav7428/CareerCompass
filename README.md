@@ -1,48 +1,64 @@
-# Welcome to CounselBot
-CounselBot is a web-based application to help students to make effective career choices.
-It is a very user-friendly platform which will surely be very easy to use and a powerful tool for all students.
-## Use CounselBot to:
-- Getting answers to general questions related to colleges and all the streams
-- Take an in-depth quiz to find more bout yourself and career suitable for you
-- Get a very detailed report which will provide you info about the top 5 professions you are inclined to.
+# CareerCompass Readme
 
-CounselBot Web-app runs on Windows, Linux, Mac and even Android. It is a web application that can easily be moulded according to our needs. It has this flexibility as it uses Streamlit as its platform.
-This is the open-source repository for the CounselBot web-app. 
+## Table of Contents
 
-![](img/21.png)
+- [Introduction](#introduction)
+- [Problem Statement](#problem-statement)
+- [Solution](#solution)
+  - [Curated Aptitude Test](#curated-aptitude-test)
+  - [Personality Test](#personality-test)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 
-## Features
-- Initially, in this app, you are greeted with a chatbot, made by us from very scratch by using TensorFlow.
-- It will answer all your basic questions regarding career, streams, subjects, and colleges. You can also ask the bot for starting your test.
-- The personality test is an in-depth test that’ll analyse and access you with effective career choices.
-- After the test, you will receive a detailed report on the top 5 occupations recommended by our Web application. It will give you a brief introduction to those professions. 
+## Introduction
 
-# Steps for usage
-- Setting up the Python Environment with dependencies:
+Welcome to CareerCompass, your trusted career guidance system designed to help you navigate the complex world of career choices. Whether you are a student about to choose your college major, a professional seeking a career change, or simply someone looking to align their career with their true passions and strengths, CareerCompass is here to guide you.
 
-        pip install tensorflow
-        pip install bokeh
-        pip install numpy
-        pip install pandas
-        pip install streamlit
-        pip install joblib
-        pip install pathlib
-        pip install nltk
+## Problem Statement
 
-- Cloning the Repository: 
+Choosing a career path is one of life's most important decisions, and it can be overwhelming. Many individuals face the following challenges:
 
-        git clone https://github.com/Nivetha2312/Hacknight-CounselBot.git
-- Enter The directory: 
+- **Lack of Clarity**: Students often lack clarity about their interests and strengths, making it difficult to choose an appropriate career path.
 
-        cd Hacknight-CounselBot
-- Run the Python setup:
-        
-        python setup.py
-- Run the App:
+- **Mismatched Career Choices**: Professionals sometimes find themselves in careers that do not align with their passions and skills, leading to job dissatisfaction.
 
-        streamlit run app.py
-- Stop the app from terminal:
+- **Ineffective Decision-Making**: People may make career decisions based on external pressure or societal expectations rather than their true aspirations.
 
-        Ctrl+C
+## Solution
 
-That's it!
+CareerCompass addresses these challenges by offering a comprehensive career guidance system that includes curated aptitude tests and personality assessments. Our solution empowers individuals to make informed career decisions based on their unique strengths and preferences.
+
+### Curated Aptitude Test
+
+Our curated aptitude test is designed to assess your skills, interests, and abilities. It evaluates your proficiency in various domains, such as mathematics, language, problem-solving, and creativity. By analyzing your test results, CareerCompass provides personalized career recommendations tailored to your aptitudes.
+
+### Personality Test
+
+Understanding your personality traits is crucial for selecting a career that aligns with your character and values. CareerCompass' personality test is based on well-established psychological models and assesses factors such as extraversion, conscientiousness, openness, agreeableness, and neuroticism. By combining your personality profile with your aptitude results, we offer insights into careers that are a great fit for your unique personality.
+
+## Getting Started
+
+To get started with CareerCompass, simply visit our website and create an account. You can then take the aptitude and personality tests to receive personalized career recommendations.
+
+## Usage
+
+1. **Account Creation**: Sign up for a CareerCompass account.
+2. **Take the Aptitude Test**: Complete the aptitude test to assess your skills.
+3. **Take the Personality Test**: Complete the personality test to understand your character traits.
+4. **Receive Recommendations**: Based on your test results, CareerCompass will provide you with a list of recommended career paths.
+5. **Explore Career Paths**: Explore the recommended career paths and access additional resources, such as educational opportunities and job market insights.
+6. **Make Informed Decisions**: Use the information provided by CareerCompass to make informed career decisions that align with your strengths and interests.
+
+## Contributing
+
+We welcome contributions from the community to improve CareerCompass. If you have ideas, feature requests, or would like to contribute to the development of our career guidance system, please refer to our [Contributing Guidelines](CONTRIBUTING.md).
+
+## License
+
+CareerCompass is released under the [MIT License](LICENSE.md). You are free to use, modify, and distribute this software, subject to the terms and conditions of the license.
+
+---
+
+Thank you for choosing CareerCompass as your trusted career guidance system. We are committed to helping you find the path that leads to a fulfilling and successful career. If you have any questions or feedback, please don't hesitate to contact our support team at support@careercompass.com.
