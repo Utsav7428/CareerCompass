@@ -12,6 +12,10 @@
 - [Contributing](#contributing)
 - [License](#license)
 
+![Alt text](https://github.com/Utsav7428/CareerCompass/blob/main/Screenshot%20(70).png?raw=true)
+
+
+  
 ## Introduction
 
 Welcome to CareerCompass, your trusted career guidance system designed to help you navigate the complex world of career choices. Whether you are a student about to choose your college major, a professional seeking a career change, or simply someone looking to align their career with their true passions and strengths, CareerCompass is here to guide you.
